@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5faff; 
+}
+
+.container {
+    margin: 50px auto;
+    width: 60%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    width: auto;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.form-row label {
+    width: 30%;
+    margin-right: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.form-row input, .form-row select, .form-row textarea {
+    width: 65%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-row button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #86c5da;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-row button:hover {
+    background-color:rgb(95, 178, 206);
+}
+
+.back-button {
+    display: block;
+    margin: 10px 0;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+ /* Notification Popup */
+.notification-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    z-index: 1000;
+}
+
+.notification-box.success {
+    border: 5px solid #4CAF50;
+}
+
+.notification-box.error {
+    border: 5px solid #f44336;
+}
+
+.notification-box p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Close Link */
+.notification-box a {
+    display: block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.notification-box a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: #f44336;
+    font-size: 0.8em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
